@@ -1,0 +1,4 @@
+pydantic-yaml
+pydantic
+pendulum
+soc-faker

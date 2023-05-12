@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocsfsim"
+authors = [
+    {name = "Paolo Di Prodi", email = "info@priam.ai"},
+]
+description = "An OCSF simulator"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["ocsf", "security"]
+license = {file = 'LICENSE'}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pydantic-yaml",
+    "pydantic",
+    "soc-faker",
+    'importlib-metadata; python_version>="3.7"',
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+# ...
+package-dir = {"" = "src"}
+
+# ... other project metadata fields as specified in:
+#     https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
